@@ -1,3 +1,4 @@
+
 body {
   padding: 0;
   margin: 6vh 6vw 6vh 6vw;
@@ -17,7 +18,7 @@ body {
   align-items: center;
   justify-content: space-between;
 }
-
+header h1 span { color: red }
 
 img {
   display: block;
@@ -45,13 +46,18 @@ img {
   color: var(--background-color);
   padding: 1rem;
 }
+.percentage {
+    border-radius: 50%;
+    background-color: red;
+    padding: 5px;
+}
 /*OnSale lable - by default don't show the class discounted and span*/
 .productlist article .discounted,
 .productlist article .price span {
   display: none;
 }
 /*OnSale discount - when discounted show it in flex*/
-.productlist article.onSale.discounted {
+.productlist article.onSale .discounted {
     display: flex;
     justify-content: space-between;
 
