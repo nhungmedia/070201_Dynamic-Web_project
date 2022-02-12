@@ -26,7 +26,12 @@ const template = document.querySelector("#smallProductTemplate").content;
 const copy = template.cloneNode(true);
 
 //change content
-const imgUrl = `https://kea-alt-del.dk/t7/images/webp/640/${product.id}.webp`; 
+
+//Inside the clone - grab the link
+
+copy.querySelector("a").setAttribute("href",`product.html?id=${product.id}`);
+
+const imgUrl = `https://kea-alt-del.dk/t7/images/webp/640/${product.id}.webp`; //
 copy.querySelector("img").src = imgUrl;
 
 copy.querySelector(".subtle").textContent = `${product.articletype} | ${product.brandname}`;
@@ -51,13 +56,6 @@ if (product.discount) {
     copy.querySelector(".discountedPrice").textContent = `Now ${newPrice} kr`;
 
 }
-/*Change the price
-<div class="discounted">
-            <p>Now 350,95 kr</p>
-            <p>-30%</p>
-        </div>*/ 
-//copy.querySelector("discounted p").textContent = product.price/product.discount;
-    //grab parent
 const parent = document.querySelector("main");
     //append - new child called COPY
 parent.appendChild(copy);
