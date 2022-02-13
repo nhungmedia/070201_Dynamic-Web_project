@@ -1,4 +1,11 @@
-const url = "https://kea-alt-del.dk/t7/api/products";
+const urlParams = new URLSearchParams(window.location.search);
+	//const query = urlParams.get("q");
+const query = urlParams.get("category");    
+//console.log(urlParams.get(category));
+
+const url = "https://kea-alt-del.dk/t7/api/products?limit=12&category=" + query;
+
+//const url = "https://kea-alt-del.dk/t7/api/products";
 //When we get response - return to Json
 fetch (url)
       .then(function(res) {
