@@ -4,16 +4,15 @@ const query = urlParams.get("category");
 //console.log(urlParams.get(category));
 
 const url = "https://kea-alt-del.dk/t7/api/products?limit=12&category=" + query;
-
+console.log("hello")
 //const url = "https://kea-alt-del.dk/t7/api/products";
 //When we get response - return to Json
+
 fetch (url)
-      .then(function(res) {
-          return res.json();
-      })
-      .then(function(data){
-          handleProductlist(data);
-      })
+      .then((res) => res.json())   
+      
+      .then((data) => handleProductlist(data));
+
 
 //Create function to handle Data
 function handleProductlist(data){

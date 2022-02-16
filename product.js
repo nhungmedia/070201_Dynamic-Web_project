@@ -1,4 +1,9 @@
-const url = "https://kea-alt-del.dk/t7/api/products/2801";
+const urlParams = new URLSearchParams(window.location.search);
+	//const query = urlParams.get("q");
+const id = urlParams.get("id");    
+//console.log(urlParams.get("id"));
+//This id will control the data that is fetched.Dynamic string where id is appended.
+const url = "https://kea-alt-del.dk/t7/api/products/" + id;
 
 //fetch the data
 fetch (url)
@@ -15,6 +20,7 @@ function showProduct(product) {
     document.querySelector("img.productImage").alt = product.productdisplayname;
     document.querySelector("h3").textContent = product.productdisplayname;
     document.querySelector(".subtle").textContent = `${product.articletype} | ${product.brandname}`;
+    document.querySelector(".info dd").textContent = product.id;
     
 }
 

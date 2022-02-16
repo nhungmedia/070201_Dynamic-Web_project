@@ -4,9 +4,74 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Product</title>
+    <link rel="stylesheet" href="CSS/base.css"/>
+    <link rel="stylesheet" href="CSS/style.css"/>
 </head>
-<body>
+<body class="product">
+  
+        <header class="mainNav">
+            <a class="home" href ="index.html"><h1>Shop<span>Mee</span></h1></a>
+            
+            <nav class="desktop">
+                <a href="category.html">Categories</a>
+                <a href="category.html">Brands</a>
+                <a href="category.html">Seasons</a>           
+            </nav>
+        </header>    
+<main>
+    <ol class="breadcrumbs">
+    <li class="aHome"><a href="index.html">Home</a></li>
+    <div class="arrow">></div>
+    <li><a href="category.html">Categories</a></li>
+    <div class="arrow">></div>
+    <li class="category"><a href="productlist.html">Apparels</a></li>
+    <div class="arrow">></div>
+    <li class="productname">Nike Mean Team India Cricket Jersey</li>
+    </ol>
+    <article class="productgrid">
+        <div class="productImg">
+    <img class="productImage" src="https://kea-alt-del.dk/t7/images/webp/1000/1165.webp" alt="Nike Mean Team India Cricket Jersey"/>
+    <p class="discounted"></p>
+</div>
+<div class="productText">
+    <section class="purchaseBox">
+        <h3>Nike Mean Team India Cricket Jersey</h3>
+        <p class="subtle">Nike | Tshirts</p>
+    <div class="productPrices">
+        <div class="noDiscount">
+        <p class="price">DKK 1399 ,-</p>
+    </div> 
+    <div class="discounted">
+        <p></p>
+    </div>
+    </div>  
+        <form>
+            <label>Size<select name ="size">
+                <option>S</option>
+                <option>M</option>
+                <option>L</option>
+                <option>XL</option>
+            </select>
+            </label>
+            <button>Add to basket</button>
+        </form>
+    </section>
+<section class="info">
+    <h2>Product Information</h2>
+    <dl>
+        <dt>Inventory number</dt>
+        <dd>1165</dd>
+    </dl>   
+
+</section>
+</div>
+</article>
+</main>
+<footer>
+    <p>Student project at KEA!</p>
+</footer>   
+<script src="product.js"></script>
     
 </body>
 </html>

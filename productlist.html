@@ -10,20 +10,29 @@
 </head>
 <body class="productlist">
     <header class="mainNav">
-        <h1>Shop<span>Me</span></h1>
-        <nav>
-            <a href="#">Categories</a>
+        <a class="home" href ="index.html"><h1>Shop<span>Mee</span></h1></a>
+        
+        <nav class="desktop">
+            <a href="category.html">Categories</a>
             <a href="category.html">Brands</a>
-            <a href="#">Men</a>
-            <a href="#">Women</a>
-            <a href="#">Children</a>
-</nav>
-    </header>
+            <a href="category.html">Seasons</a>           
+        </nav>
+    </header>    
+  
     <main>
+        <ol class="breadcrumbs">
+            <li class="aHome"><a href="index.html">Home</a></li>
+            <div class="arrow">></div>
+            <li><a href="category.html">Categories</a></li>
+            <div class="arrow">></div>
+            <li class="category"><a href="productlist.html">Apparels</a></li>
+            <div class="arrow">></div>
+            <li class="productname">Nike Mean Team India Cricket Jersey</li>
+            </ol>    
         <h2>Hummel</h2>        
         <template id="smallProductTemplate">
         <article class="smallProduct">
-            <img src="https://kea-alt-del.dk/t7/images/webp/640/1163.webp" alt="Hummel Space Jam Diez"/>
+            <a class="viewItem"><img src="https://kea-alt-del.dk/t7/images/webp/640/1163.webp" alt="Hummel Space Jam Diez"/></a>
             <h3>HUMMEL SPACE JAM DIEZ</h3>
             <p class="subtle">Tshirts | Hummel</p>
             <p class="price">500,95 kr</p>
@@ -31,7 +40,7 @@
             <p class="discountedPrice">Now 350,95 kr</p>
             <p class="percentage">-30%</p>
         </div>
-        <a href="product.html">Read More</a>
+        <a href="product.html?id=1531">Read More</a>
         </article> 
     </template>
         <!-- <article class="smallProduct onSale">
@@ -78,8 +87,8 @@
     </div>
 <a href="product.html">Read More</a>
 </article> -->
-    </main>
-    
-</body>
+</main>   
+
 <script src="productlist.js"></script>
+</body>
 </html>
