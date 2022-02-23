@@ -7,6 +7,7 @@ const url = "https://kea-alt-del.dk/t7/api/products?limit=12&category=" + query;
 console.log("hello")
 //const url = "https://kea-alt-del.dk/t7/api/products";
 //When we get response - return to Json
+//productlist.html?category=Apparel
 
 fetch (url)
       .then((res) => res.json())   

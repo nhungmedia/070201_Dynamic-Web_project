@@ -1,0 +1,1 @@
+Give a class to the link where the product is fetched.
