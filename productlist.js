@@ -37,6 +37,7 @@ const copy = template.cloneNode(true);
 //Inside the clone - grab the link
 
 copy.querySelector("a").setAttribute("href",`product.html?id=${product.id}`);
+copy.querySelector(".readmore").setAttribute("href",`product.html?id=${product.id}`);
 
 const imgUrl = `https://kea-alt-del.dk/t7/images/webp/640/${product.id}.webp`; //
 copy.querySelector("img").src = imgUrl;
